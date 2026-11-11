@@ -1,6 +1,6 @@
 # Awesome-Cloud-Storage-Snapshot-Management
 
-# Top Cloud Storage Snapshot Management Ecosystem
+## Top Cloud Storage Snapshot Management Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Point-in-Time Copies, Snapshot Orchestration & Cyber-Resilient Recovery*  
