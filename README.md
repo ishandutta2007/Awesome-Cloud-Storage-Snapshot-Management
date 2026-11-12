@@ -67,7 +67,7 @@ The table below catalogs leading enterprise SaaS platforms and managed cloud sna
 
 ## 💻 Open-Source Snapshot Projects
 
-Self-hosted, vendor-neutral snapshot orchestration, volume backup, and point-in-time filesystem recovery tools. **Sorted descending by GitHub Stars_Count**. Each Stars_Badge links directly to that repository's stargazers page.
+Self-hosted, vendor-neutral snapshot orchestration, volume backup, and point-in-time filesystem recovery tools. **Sorted descending by GitHub_Stars_Count**. Each Stars_Badge links directly to that repository's stargazers page.
 
 | 📦 Project | ⭐ GitHub_Stars | 📝 Description | 🔗 Primary Use Case |
 |---|---|---|---|
@@ -111,7 +111,7 @@ We welcome additions, corrections, and improvements from the cloud storage and d
 2. 🌿 Create a new feature branch (`git checkout -b feature/add-new-tool`).
 3. 📝 Add or update entries in `README.md` following the established table structure:
    - For SaaS: include product name, scale, accurate starting tier pricing, and free tier/trial details.
-   - For Open-Source: include repo link, GitHub Stars_Badge linking to `/stargazers`, concise description, and primary use case.
+   - For Open-Source: include repo link, GitHub_Stars_Badge linking to `/stargazers`, concise description, and primary use case.
 4. 🚀 Open a Pull Request with a clear description of the addition.
 
 ---
