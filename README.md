@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Storage-Snapshot-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -67,9 +67,9 @@ The table below catalogs leading enterprise SaaS platforms and managed cloud sna
 
 ## 💻 Open-Source Snapshot Projects
 
-Self-hosted, vendor-neutral snapshot orchestration, volume backup, and point-in-time filesystem recovery tools. **Sorted descending by GitHub star count**. Each star badge links directly to that repository's stargazers page.
+Self-hosted, vendor-neutral snapshot orchestration, volume backup, and point-in-time filesystem recovery tools. **Sorted descending by GitHub Stars_Count**. Each Stars_Badge links directly to that repository's stargazers page.
 
-| 📦 Project | ⭐ Stars | 📝 Description | 🔗 Primary Use Case |
+| 📦 Project | ⭐ GitHub_Stars | 📝 Description | 🔗 Primary Use Case |
 |---|---|---|---|
 | **[Rclone](https://github.com/rclone/rclone)** | [![Stars](https://img.shields.io/github/stars/rclone/rclone?style=social&color=white)](https://github.com/rclone/rclone/stargazers) | "Swiss army knife" for cloud storage sync, copy, and snapshot archival to 70+ cloud providers (S3, B2, Azure Blob, GCS, SFTP). | Multi-cloud snapshot synchronization & offsite archival |
 | **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | Fast, secure, deduplicated backup CLI with immutable snapshot-based versioning. Every snapshot is an independent, complete directory tree. | Deduplicated snapshot-based backup to local & object storage |
@@ -111,7 +111,7 @@ We welcome additions, corrections, and improvements from the cloud storage and d
 2. 🌿 Create a new feature branch (`git checkout -b feature/add-new-tool`).
 3. 📝 Add or update entries in `README.md` following the established table structure:
    - For SaaS: include product name, scale, accurate starting tier pricing, and free tier/trial details.
-   - For Open-Source: include repo link, GitHub star badge linking to `/stargazers`, concise description, and primary use case.
+   - For Open-Source: include repo link, GitHub Stars_Badge linking to `/stargazers`, concise description, and primary use case.
 4. 🚀 Open a Pull Request with a clear description of the addition.
 
 ---
@@ -177,7 +177,7 @@ Contributions welcome! Open an PR to add/update entries. Keep descriptions factu
 
 ## Open-Source GitHub Projects
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | Fast, secure, deduplicated backup tool with snapshot-based versioning. Supports S3, B2, Azure, GCS, SFTP, and local storage. Every snapshot is independently restorable; incremental runs only store changes. |
 | **[Kopia](https://github.com/kopia/kopia)** | [![Stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers) | Cross-platform backup tool with snapshot-based versioning, deduplication, and end-to-end encryption. Supports S3, B2, Azure Blob, GCS, WebDAV, and SFTP. Includes KopiaUI for scheduling and policy management. |
@@ -185,7 +185,7 @@ Contributions welcome! Open an PR to add/update entries. Keep descriptions factu
 
 ### Additional Strong Open-Source Options
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[Velero](https://github.com/vmware-tanzu/velero)** | [![Stars](https://img.shields.io/github/stars/vmware-tanzu/velero?style=social&color=white)](https://github.com/vmware-tanzu/velero/stargazers) | Kubernetes backup and restore with volume snapshot support. Integrates with cloud provider snapshot APIs (EBS, Azure Disk, GCE PD) for persistent volume protection. |
 | **[K10 (Kasten)](https://github.com/kastenhq/k10)** | [![Stars](https://img.shields.io/github/stars/kastenhq/k10?style=social&color=white)](https://github.com/kastenhq/k10/stargazers) | Kubernetes-native backup with snapshot orchestration. Application-consistent snapshots via CSI volume snapshots and cloud provider integration. |
