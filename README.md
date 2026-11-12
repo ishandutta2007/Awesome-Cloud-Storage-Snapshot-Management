@@ -139,3 +139,75 @@ If you find this curated ecosystem directory useful:
 - Always test automated snapshot restoration policies and disaster recovery rollbacks in staging environments before applying them to production systems.
 # Awesome-Cloud-Storage-Snapshot-Management
 
+# Top Cloud Storage Snapshot Management Ecosystem
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Point-in-Time Copies, Snapshot Orchestration & Cyber-Resilient Recovery*  
+**Last updated: March 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Storage Snapshot Management**. These tools help organizations create, schedule, retain, and restore point-in-time copies of storage volumes across on-premises arrays, cloud block storage, and hybrid environments—covering crash-consistent snapshots, application-consistent orchestration, and immutable recovery points for ransomware resilience.
+
+**Examples** include NetApp Snapshot, AWS EBS Snapshots, Azure Backup Snapshots, Google Cloud Persistent Disk Snapshots, Druva, Veeam, Rubrik, Dell EMC Unity Snapshots, HPE Nimble Snapshots, Nutanix Prism, and Pure Storage FlashRecover (the category leaders).
+
+**Open-source emphasis**: This section highlights every major active project for self-hosted snapshot-based backup, open-source volume management, and community-driven data protection—ideal for system administrators, platform engineers, and organizations seeking transparent, vendor-neutral snapshot orchestration without per-array licensing.
+
+Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+
+## Table of Contents
+- [SaaS/Hosted Platforms](#saas-products)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+## SaaS/Hosted Platforms
+
+| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
+|---------|-------------|-------------------|--------------------------|
+| **[NetApp Snapshot](https://www.netapp.com/)** | Foundational snapshot technology built into ONTAP. Uses WAFL pointer manipulation to create read-only, space-efficient point-in-time copies with no performance impact. Creating Snapshot copies and cloning volumes is free—no license required . | Included with ONTAP systems; no additional license for snapshot creation | **Free**: Snapshot copies and volume clones require no license . NetApp Backup and Recovery offers a **30-day free trial** for PAYGO subscriptions . |
+| **[AWS EBS Snapshots](https://aws.amazon.com/ebs/snapshots/)** | Incremental block-level snapshots of EBS volumes. Standard tier for frequent access; Archive tier for long-term retention. Data Lifecycle Manager (DLM) automates snapshot creation and retention at no additional charge . | Standard: $0.05/GB-month; Archive: ~$0.0125/GB-month (up to 75% lower)  | **EBS Free Tier (China regions)**: 1 GB snapshot storage for one year . No free tier for snapshot storage in most global regions. |
+| **[Azure Backup Snapshots](https://azure.microsoft.com/en-us/products/backup/)** | Disk snapshots integrated into Azure Backup for VMs and SAP HANA. Enhanced policy stores snapshots in Recovery Services Vault with immutability and soft delete. Pricing is backup fee + storage fee; billed per protected instance plus storage consumed . | Pay-as-you-go: backup fee (based on protected data size) + storage fee | **No free tier** for Azure Backup; every backup operation incurs costs . Azure free account credits may apply. |
+| **[Google Cloud Persistent Disk Snapshots](https://cloud.google.com/compute/docs/disks/create-snapshots)** | Incremental, compressed snapshots of Persistent Disk. Standard tier for regular access; Archive tier for long-term retention. Billed on actual compressed snapshot size, not provisioned disk size. | Standard: ~$0.05/GiB-month; Archive: ~$0.019/GiB-month  | **$300 free credits** for new Google Cloud customers (90 days) |
+| **[Druva](https://www.druva.com/)** | SaaS data protection with snapshot management across VMware, Hyper-V, Nutanix AHV, and cloud workloads. Consumption-based pricing: 1 credit = 1 TB of compressed/deduplicated data per month. Enterprise tier from ~€191/TB/month (~$210 USD) via reseller . | Enterprise: from ~€191/TB/month (~$210 USD); M365 from ~€2.47/user/month . Third-party listing shows paid version from $8.00/month . | No free tier; **free trial** available . No permanent free version . |
+| **[Veeam Backup & Replication](https://www.veeam.com/)** | Snapshot orchestration across supported storage arrays. Backup from Storage Snapshots reduces production impact; Snapshot Orchestration creates periodic storage snapshots; restore from snapshots is up to 10x faster. | VUL licensing: ~2 EUR/month per workload (approximate) ; Foundation 10-instance pack ~$1,470/year . | **Community Edition**: free for up to 10 VM/workloads . |
+| **[Rubrik Security Cloud](https://www.rubrik.com/)** | SLA-driven snapshot management with immutable retention, anomaly detection, and orchestrated recovery. Terraform provider supports declarative snapshot policies. | Quote-only (enterprise contract; capacity-based) . Third-party listing shows starting at $2,500/month (unverified) . | **No free plan**; some listings mention a **30-day free trial** but official sources list no trial . |
+| **[Dell EMC Unity Snapshots](https://www.dell.com/)** | Unified snapshots for NAS and SAN on Unity XT arrays. Default snapshot schedules available (daily, 1–7 day retention); custom schedules configurable. Snapshot schedules can be replicated across synchronously replicated file resources . | Included with Unity array licensing | No free tier; evaluation via Dell sales |
+| **[HPE Nimble Storage Snapshots](https://www.hpe.com/)** | Volume snapshots and consistency group snapshots. Read/write snapshots with large numbers supported; advanced data protection features included with array . | Included with Nimble/Alletra array licensing | No free tier; evaluation via HPE |
+| **[Nutanix Prism Snapshots](https://www.nutanix.com/)** | VM-centric snapshots and clones via Prism. Prism Starter included with every AOS license; Prism Pro/Ultimate add AIOps and advanced features. | Included with AOS licensing; Prism Pro/Ultimate per-node licensing | **90-day trial** of Prism Ultimate included with every AOS edition . |
+| **[Pure Storage FlashRecover](https://www.purestorage.com/)** | Integrated replication, snapshot, and policy management. Data reduction-aware snapshots and replication reduce bandwidth for DR. Replication is free—no license charge for replication or by capacity . | Included with Purity software on FlashArray systems | **No free version or trial** listed for FlashRecover . Replication itself is free with FlashArray . |
+
+## Open-Source GitHub Projects
+
+| Project | Star Badge | Description |
+|---------|------------|-------------|
+| **[Restic](https://github.com/restic/restic)** | [![Stars](https://img.shields.io/github/stars/restic/restic?style=social&color=white)](https://github.com/restic/restic/stargazers) | Fast, secure, deduplicated backup tool with snapshot-based versioning. Supports S3, B2, Azure, GCS, SFTP, and local storage. Every snapshot is independently restorable; incremental runs only store changes. |
+| **[Kopia](https://github.com/kopia/kopia)** | [![Stars](https://img.shields.io/github/stars/kopia/kopia?style=social&color=white)](https://github.com/kopia/kopia/stargazers) | Cross-platform backup tool with snapshot-based versioning, deduplication, and end-to-end encryption. Supports S3, B2, Azure Blob, GCS, WebDAV, and SFTP. Includes KopiaUI for scheduling and policy management. |
+| **[BorgBackup](https://github.com/borgbackup/borg)** | [![Stars](https://img.shields.io/github/stars/borgbackup/borg?style=social&color=white)](https://github.com/borgbackup/borg/stargazers) | Deduplicating backup tool with point-in-time archive snapshots. Supports local, SSH, and cloud storage backends. Mature and battle-tested for Linux environments. |
+
+### Additional Strong Open-Source Options
+
+| Project | Star Badge | Description |
+|---------|------------|-------------|
+| **[Velero](https://github.com/vmware-tanzu/velero)** | [![Stars](https://img.shields.io/github/stars/vmware-tanzu/velero?style=social&color=white)](https://github.com/vmware-tanzu/velero/stargazers) | Kubernetes backup and restore with volume snapshot support. Integrates with cloud provider snapshot APIs (EBS, Azure Disk, GCE PD) for persistent volume protection. |
+| **[K10 (Kasten)](https://github.com/kastenhq/k10)** | [![Stars](https://img.shields.io/github/stars/kastenhq/k10?style=social&color=white)](https://github.com/kastenhq/k10/stargazers) | Kubernetes-native backup with snapshot orchestration. Application-consistent snapshots via CSI volume snapshots and cloud provider integration. |
+
+**Frameworks for building custom systems**: Combine **Restic** or **Kopia** for encrypted, snapshot-based backup to object storage, **Velero** for Kubernetes volume snapshot orchestration, and **BorgBackup** for legacy Linux workload protection—creating a fully self-hosted snapshot management stack without per-array licensing.
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format).
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Snapshot management tools require broad access to storage APIs and volume metadata; enforce least-privilege IAM roles and audit snapshot deletion events.
+- Snapshot pricing varies significantly by tier (Standard vs Archive) and retention duration; EBS Archive and GCP Archive offer substantial savings for infrequently accessed snapshots but add retrieval fees. Self-hosted open-source tools require capacity planning and off-site replication to protect against primary storage loss. Enterprise pricing (Rubrik, Druva, Veeam) is largely quote-only and varies by volume and negotiation.
+
+---
+
+**Made for system administrators, platform engineers, backup architects, and organizations building resilient storage infrastructure.**  
+Let's make cloud storage snapshot management more open, automated, and cost-transparent.
