@@ -137,3 +137,5 @@ If you find this curated ecosystem directory useful:
 - This list is a **community-curated reference** and does not constitute formal financial, architectural, or vendor endorsement.
 - Storage prices and cloud tiers (e.g., Standard vs. Archive tier, egress fees, per-IOPS charges) fluctuate based on region, volume size, and enterprise contract terms. Always verify current rates against official vendor pricing calculators.
 - Always test automated snapshot restoration policies and disaster recovery rollbacks in staging environments before applying them to production systems.
+# Awesome-Cloud-Storage-Snapshot-Management
+
